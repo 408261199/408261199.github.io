@@ -69,7 +69,53 @@
     
 
     <!-- Content -->
-    
+    <script>
+   document.addEventListener('DOMContentLoaded', function(){
+    document.getElementById('getMessage').onclick = function(){
+    document.getElementsByClassName('message')[0].textContent="THX!!!";
+    }
+  });
+</script>
+
+<style>
+  body {
+    color:blue;
+    text-align: center;
+    font-family: "Helvetica", sans-serif;
+  }
+  h1 {
+    color:blue;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .box {
+    color:blue;
+    border-radius: 5px;
+    background-color: GREEN;
+    padding: 20px 5px;
+  }
+  button {
+    color: white;
+    background-color: #4791d0;
+    border-radius: 5px;
+    border: 1px solid #4791d0;
+    padding: 5px 10px 8px 10px;
+  }
+  button:hover {
+    background-color: RED;
+    border: 1px solid #0F5897;
+  }
+</style>
+
+<h1>Press LIKE</h1>
+<p class="message box">
+</p>
+<p>
+  <button id="getMessage">
+    LIKE 
+  </button>
+</p>
+
     <!-- Only display the Read More link if we are displaying an excerpt -->
     
 
